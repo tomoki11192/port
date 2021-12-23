@@ -1,59 +1,92 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  </head>
-  
-  <body>
-    <header>
-      <h1>Danno tomoki's Portfolio</h1>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Port folio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="flex">
+    <div class="main_colum main_from_left">
+      <section class="main">
+        <h1>DANNO TOMOKI<br>PORTFOLIO</h1>
+        <p>mail:tt73dt11@gmail.com</p>
+      </section>
     
-    <section class="port">
-      <h2>作品</h2>
-      <div class="container">
-        <ul>
-          <div class="port_img">
-            <li><img src="img/スクリーンショット (3).png"></li>
-          </div>
-          <div class="port_txt">
-            <li><p>摸写</p></li>
-            <li><p>制作理由 スキル向上のため</p></li>
-            <li><p>制作期間 約1週刊</p></li>
-            <li><p>制作 デザインカンプからのコーデイング</p></li>
-          </div>
-        </ul>
-        <ul>
-          <div class="port_img">
-            <a href="https://tomoki11192.github.io/flower/" target="_blank">
-              <li><img src="img/flower_screenshot.png"></li>
-            </a> 
-              
-          </div>
-          <div class="port_txt">
-            <li><p>テキストテキストテキストテキストテキスト</p></li>
-            <li><p>テキストテキストテキストテキストテキスト</p></li>
-          </div>
-        </ul>
-      </div>
-    </section>
-  <section class="about">
-    <h2>自己紹介</h2>
-    <img src="img/profile.jpg">
-    <div class="container">
-     <p class="about_txt">名前 団野　智貴</p>
-     <p class="about_txt">年齢 23 </p>
-     <p class="about_txt">学歴 金沢大学院在学中 </p>
-     <p class="about_txt">趣味 キャンプ、バイ </p>
-     <p class="about_txt">一言 何事も丁寧に </p>
+      <section class="about">
+        <h2>about</h2>
+        <img src="img/profile(2).jpg" alt="ダンノトモキの画像">
+        <dl>
+          <dt>名前</dt>
+          <dd>團野 智貴</dd>
+          <dt>年齢</dt>
+          <dd>23</dd>
+          <dt>学歴</dt>
+          <dd>金沢大学院在学中</dd>
+          <dt>趣味</dt>
+          <dd>キャンプ、バイク</dd>
+        </dl>
+      </section>
     </div>
-   
-  </section>
+  
+    <div class="main_right">
+      <h2>gallery</h2>
+      <div class="img_flex">
+        <a href="https://tomoki11192.github.io/flower/" target="_blank">
+          <img src="img/isara.screenfhot(3).png" alt="webサイトISARAの摸写画像">
+        </a>
+        <a href="https://tomoki11192.github.io/flower/" target="_blank">
+          <img src="img/isara(2).png" alt="webサイトISARAの摸写画像">
+        </a>
+        <a href="https://tomoki11192.github.io/flower/" target="_blank">
+          <img src="img/isara(3).png" alt="webサイトISARAの摸写画像">
+        </a>
+        <a href="https://tomoki11192.github.io/flower/" target="_blank">
+          <img src="img/isara(4).png" alt="webサイトISARAの摸写画像">
+        </a>
+        <a href="https://tomoki11192.github.io/flower/" target="_blank">
+          <img src="img/isara(5).png" alt="webサイトISARAの摸写画像">
+        </a>
+      </div>
+      <dl>
+        <dt>摸写</dt>
+        <dt>制作理由</dt>
+        <dd>コーディング技術向上のため</dd>
+        <dt>作成期間</dt>
+        <dd>１週間</dd>
+        <dt>作成</dt>
+        <dd>コーディングのみ</dd>
+      </dl>
+    
+    
+      <div class="img_flex">
+        <a href="https://tomoki11192.github.io/flower/" target="_blank">
+          <img src="img/flowershop_screenshot.png" alt="webサイトFlowerShopHIBARIの画像">
+        </a>
+        <a href="https://tomoki11192.github.io/flower/" target="_blank">
+          <img src="img/flowershop(2).png" alt="webサイトFlowerShopHIBARIの画像">
+        </a>
+        <a href="https://tomoki11192.github.io/flower/" target="_blank">
+          <img src="img/flowershop(3).png" alt="webサイトFlowerShopHIBARIの画像">
+        </a>
+      </div>
+      <dl>
+        <dt>制作理由</dt>
+        <dd>デザイン、コーディング技術向上のため</dd>
+        <dt>作成期間</dt>
+        <dd>１週間</dd>
+        <dt>作成</dt>
+        <dd>構想からデザイン、コーディングまで</dd>
+      </dl>
+    </div>
+  </div>
 
+
+  <script src="js/main.js"></script>
 </body>
 </html>
