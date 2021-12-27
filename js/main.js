@@ -29,7 +29,7 @@
   const next = document.getElementById('first');
 
   next.addEventListener('click', () => {
-    window.scrollTo(800,0);
+    window.scrollTo(600,0);
 
   });
 
@@ -44,6 +44,26 @@
      scrollTo(0,0);
    });
 
+  //  const foward = document.getElementsByClassName('photo');
+   
+  //  foward.addEventListener('click', () => {
+  //    modal.classList.add('appear');
+  //   });
+    
+    
+    const push = document.getElementById('push');
+    const modal = document.getElementById('modal');
 
+  push.addEventListener('click', () => {
+    modal.classList.add('appear');
+  });
+
+    
+  const close = document.getElementById('close');
+  
+  close.addEventListener('click', () => {
+    modal.classList.remove('appear');
+
+  });
 
 }
