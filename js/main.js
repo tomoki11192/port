@@ -7,34 +7,43 @@
       e.preventDefault()
       window.scrollBy(e.deltaY, 0)
     };
+    
+  });
+  
+ 
+  const slide = ['img/slide1.jpg', 'img/slide2.jpg', 'img/slide3.jpg' ,'img/slide4.jpg'];
+  let num = -1 ;
+  function slideshow_time () {
+    if (num === 3){
+      num = 0;
+    }
+    else {
+      num ++;
+    }
+    document.getElementById('mypic').src = slide[num];
+  };
+
+  setInterval(slideshow_time, 3000);
+
+ 
+  const next = document.getElementById('first');
+
+  next.addEventListener('click', () => {
+    window.scrollTo(800,0);
 
   });
 
-  
+  const second = document.getElementById('second');
+   second.addEventListener('click', () => {
+     window.scrollTo(2200,0);
+   });
 
-  // function callback(entries, obs) {
-  //   entries.forEach(entry => {
-  //     if (!entry.isIntersecting) {
-  //       return;
-  //     }
+   const top = document.getElementById('last');
 
-  //     entry.target.classList.add('appear');
-  //     obs.unobserve(entry.target);
-      
-  //   });
-  // }
+   top.addEventListener('click', () => {
+     scrollTo(0,0);
+   });
 
-  // const options = {
-  //   threshold: 0.8
-  // };
-
-  // const observer = new IntersectionObserver (callback, options);
-
-  // const targets = document.querySelectorAll('.main_colum');
-
-  // targets.forEach(target => {
-  //   observer.observe(target);
-  // });
 
 
 }
