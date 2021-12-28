@@ -66,4 +66,19 @@
 
   });
 
+  const hibariopen = document.getElementById('hibari_open');
+  const hibarimodal = document.getElementById('hibari_modal');
+  
+  hibariopen.addEventListener('click', () => {
+    hibarimodal.classList.add('app');
+  });
+  
+  const hibari_close = document.getElementById('hibari_close');
+
+  hibari_close.addEventListener('click', () => {
+    hibarimodal.classList.remove('app');
+  });
+
+  
+
 }

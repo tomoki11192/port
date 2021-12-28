@@ -15,7 +15,7 @@
     <div class="main_colum main_from_left">
       <section class="main">
        
-        <h1>Danno Tomoki</h1>
+        <h1>Danno <span class="h1_right">Tomoki</span></h1>
         <img src="img//rogo (2) - コピー.png">
       
         <p>PORTFOLIO</p>
@@ -78,9 +78,9 @@
             <img src="img/flowershop(2).png" alt="webサイトFlowerShopHIBARIの画像">
           </a>
         </div>
-        <h3>Flowershop HIBARI</h3>
+        <h3>Flowershop HIBARI(仮想店舗）</h3>
         <div class="modal_btn_o">
-          <btn class="modal_btn">詳細</btn>
+          <btn class="modal_btn" id="hibari_open">詳細</btn>
         </div>
         <dl>
           <dt>制作理由</dt>
@@ -93,23 +93,69 @@
 
         <!-- isaraの画像(java） -->
         <div class="modal" id="modal">
+          <h1>isara.life摸写制作LP</h1>
           <div class="modal_flex">
             <section class="modal1">
               <img src="img/isara摸写(phone).png">
             </section>
             <section class="modal2">
               <img src="img/isara phone(5).png">
+              <p class="modal_txt">ケータイ表示</p>
             </section>
             <section class="modal3">
               <img src="img/isara(pc4).png">
             </section>
             <section class="modal3">
               <img src="img/isara(pc3).png">
+              <p class="modal_txt">パソコン表示</p>
             </section>
           </div>
           <div class="modal_btn_c">
             <btn class="modal_btn_close" id="close">戻る</btn>
           </div>
+        </div>
+
+        <div class="modal_hibari" id="hibari_modal">
+          <h1>FlowerShop HIBARI （架空店舗） </h1>
+          <section class="hibari_top">
+            <div class="hibari_img">
+              <img src="img/flowershop_screenshot.png">
+            </div>
+            <div>
+              <dl class="hibari_txt">
+                <dt>テーマ</dt>
+                <dd>生活と植物</dd>
+                <dt>デザインコンセプト</dt>
+                <dd>綺麗な花屋さん</dd>
+                <dt>メインターゲット</dt>
+                <dd>20代～40代</dd>
+                <dt>制作</dt>
+                <dd>構想からデザイン、コーディングまで</dd>
+                <dt>制作期間</dt>
+                <dd>1週間</dd>
+              </dl>
+            </div>
+          </section>
+          <section class="hibari_bottom">
+            <div class="hibari_txt">
+              <dl>
+                <dt>工夫</dt>
+                <dd>ページトップの画像を編集で暗めに加工し、<br>店舗名とキャッチコピーを見やすくした。</dd>
+                <dt>改善点</dt>
+                <dd>余白が多く少し寂しい印象となったので、<br>イラストなどを入れると寂しさが薄れるかも。</dd>
+                <dt>URL</dt>
+                <dd><a href="https://tomoki11192.github.io/flower/" target="blank">https://tomoki11192.github.io/flower/</a></dd>
+                
+              </dl>
+            </div>
+            <div class="hibari_img">
+              <img src="img/flowershop(2).png">
+            </div>
+          </section>
+          <div class="hibari_modal_btn_c">
+            <btn class="hibari_modal_btn_close" id="hibari_close">戻る</btn>
+          </div>
+            
       
         </div>
       
@@ -122,7 +168,7 @@
         <div class="about_flex">
           <img src="img/profile.jpg" alt="ダンノトモキの画像">
           <div class="about_txt">
-            <h3>團野　智貴</h3>
+            <h3>團野 智貴 (Danno Tomoki)</h3>
             <p>HTML CSS Javaなどを使いホームページを作成致します。</p>
             <dl>
               <dt>年齢</dt>

@@ -124,6 +124,11 @@ body {
   font-weight: 100;
   position: relative;
 }
+.main .h1_right {
+  position: absolute;
+  top: 33px;
+  left: 35px;
+}
 
 .main img {
   position: absolute;
@@ -132,19 +137,20 @@ body {
 }
 
 .main p:first-of-type {
-  margin-top: 85px;
+  margin-top: 80px;
   font-size: 20px;
   font-weight: bold;
 }
 
 .main p {
   font-size: 15px;
+  margin-top: 5px;
 }
 
 
 
 .nav ul {
-  padding: 150px 0 0 200px;
+  padding: 200px 0 0 200px;
   font-size: 20px;
 }
 
@@ -288,6 +294,7 @@ body {
 
 .main_right h2 {
   position: relative;
+  font-weight: normal;
 }
 
 
@@ -411,14 +418,21 @@ body {
 #modal.appear {
   display: block;
 }
-
+.modal h1 {
+  color: #fff;
+  padding: 20px 0 0;
+  font-weight: normal;
+  text-align: center;
+}
 .modal_flex {
   display: flex;
   height: 80%;
   width: 80%;
   margin:  0 auto;
-  padding-top: 50px;
+  padding-top: 10px;
 }
+
+
 
 section.modal1 {
   height: 750px;
@@ -437,16 +451,24 @@ section.modal3 {
   margin-left: 10px;
   }
 
+  .modal_txt {
+    color: #fff;
+    font-size: 15px;
+    text-align: right;
+    margin-top: 5px;
+  }
+
 .modal img {
   height: 90%;
   width: 100%;
   object-fit: cover;
-  border: 1px solid #000;
+  border: 1px solid #fff;
+  border-radius: 3px;
 }
 
 .about_flex {
   display: flex;
-  margin: 60px 0 150px 0;
+  margin: 60px 0 100px 0;
   width: 700px;
   justify-content: space-between;
   
@@ -459,8 +481,10 @@ section.modal3 {
 }
 
 .about h2 {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 100;
+  position: relative;
+  top: -25px;
 }
 
 .about img {
@@ -474,6 +498,10 @@ section.modal3 {
 
 .about_txt {
   padding-top: 30px;
+}
+
+.about_txt h3 {
+  font-size: 20px;
 }
 
 .about_txt p {
@@ -503,6 +531,7 @@ section.modal3 {
   font-size: 17px;
   line-height: 2rem;
   border: 1px solid #000;
+  border-radius: 4px;
   padding: 30px;
   box-sizing: border-box;
 }
@@ -525,6 +554,7 @@ section.modal3 {
   object-fit: cover;
   border: 1px solid #000;
   transition: all .3s ease-in-out;
+  border-radius: 3px;
 }
 
 nav .btn {
@@ -582,4 +612,102 @@ nav .btn:hover {
 #middle {
   width: 500px;
   height: 100vh;
+}
+
+#hibari_modal.app {
+  display: block;
+}
+
+#hibari_modal {
+  background-color:rgba(0, 0, 0, .9);
+  height: 800px;
+  margin: 50px auto 0;
+  width: 1400px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  position: fixed;
+  top: 0;
+  left: 150px;
+  color: aliceblue;
+  display: none;
+  text-align: center;
+}
+
+.modal_hibari h1 {
+  padding: 25px 0 10px;
+  font-weight: normal;
+}
+.hibari_bottom,
+.hibari_top {
+  display: flex;
+  padding: 10px 180px 0;
+  height: 40%;
+  justify-content: space-between;
+}
+
+.hibari_bottom dl {
+  margin-left: 0;
+}
+
+.hibari_img {
+  width: 60%;
+}
+
+.hibari_img img {
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+.hibari_txt {
+  padding-top: 80px;
+}
+
+.hibari_bottom .hibari_txt {
+  padding-top: 120px;
+}
+
+.hibari_txt dt {
+  float: left;
+}
+
+.hibari_txt dd {
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+
+.hibari_txt a {
+  text-decoration: noen;
+  color: #fff;
+}
+
+.hibari_modal_btn_c {
+  width: 100px;
+  margin: 20px auto 0;
+  background: #fff;
+  height: 25px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+}
+
+.hibari_modal_btn_close {
+  color: #000;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding-top: 3px;
+  font-weight: bold;
+  font-size: 17px;
+  width: 60px;
+  height: 25px;
+  border-bottom: 1px solid #000;
+  transition: all .3s;
+}
+
+.hibari_modal_btn_close:hover {
+  opacity: 0.7;
+  border-bottom: 1px solid #000;
+  width: 80%;
 }
