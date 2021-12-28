@@ -749,24 +749,37 @@ nav .btn:hover {
   }
 
   .main {
-    margin: 20px 0 0 20px;
+    margin: 20px 20px 0 20px;
+  }
+
+  .main h1 {
+    font-size: 1.2rem;
+  }
+
+  .main .h1_right {
+    top: 16px;
+    left: 20px;
   }
 
   .main img {
-    top: 10px;
-    left: 200px;
-    width: 150px;
-    height: 150px;
+    top: 60px;
+    left: 270px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .main p {
+    font-size: 10px;
   }
   .main p:first-of-type {
     margin-top: 65px;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: normal;
   }
 
   .main_right {
     margin: 20px 0 0 0 ;
-    width: 100%;
+    padding: 0 15px;
     height: auto;
   }
 
@@ -786,6 +799,7 @@ nav .btn:hover {
   .main_right h3 {
     margin: 0 auto;
     text-align: center;
+    font-size: 13px;
   }
 
   .modal_btn_o {
@@ -803,6 +817,7 @@ nav .btn:hover {
   .main_right dl {
     width: 90%;
     margin: 0 auto;
+    font-size: 13px;
   }
   .secondimg_flex {
     margin-top: 20px;
@@ -834,18 +849,29 @@ nav .btn:hover {
   .about_txt {
     padding: 30px;
     text-align: left;
+    font-size: 12px;
+  }
+
+  .about_txt h3 {
+    font-size: 15px;
   }
 
   .about dd {
     margin-bottom: 10px;
   }
+
+  .coment {
+    padding: 0 15px;
+  }
+
   .coment p {
     width: auto;
+    font-size: 10px;
   }
 
   .carouse {
-    padding: 0;
-    width: 100%;
+    padding: 0 15px;
+    
   }
 
   .carouse img {
