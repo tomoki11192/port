@@ -44,13 +44,6 @@
      scrollTo(0,0);
    });
 
-  //  const foward = document.getElementsByClassName('photo');
-   
-  //  foward.addEventListener('click', () => {
-  //    modal.classList.add('appear');
-  //   });
-    
-    
     const push = document.getElementById('push');
     const modal = document.getElementById('modal');
 
